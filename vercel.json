@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "ab-app-saas",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

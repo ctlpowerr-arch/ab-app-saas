@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F2F2F2;
+            font-family: 'Montserrat', sans-serif;
+            color: #1A1A1A;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            overflow: hidden;
+        }
+        .left-content {
+            padding-top: 60px;
+            padding-left: 80px;
+        }
+        .header-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .accent-dot {
+            width: 20px;
+            height: 20px;
+            background-color: #0057B7;
+            margin-right: 20px;
+        }
+        .slide-title {
+            font-size: 48px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        .code-block {
+            background-color: #1A1A1A;
+            color: #F2F2F2;
+            padding: 30px;
+            font-family: 'Fira Code', monospace;
+            font-size: 18px;
+            line-height: 1.5;
+            border-left: 10px solid #0057B7;
+            width: 750px;
+        }
+        .code-keyword { color: #0057B7; }
+        .code-comment { color: #666; }
+        .right-content {
+            background-color: #333333;
+            padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tech-highlight {
+            color: #F2F2F2;
+            margin-bottom: 40px;
+            width: 300px;
+        }
+        .tech-highlight h3 {
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #0057B7;
+        }
+        .tech-highlight p {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+        .abstract-img {
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+            margin-top: 40px;
+            background: #F2F2F2;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-content">
+            <div class="header-group">
+                <div class="accent-dot"></div>
+                <h2 class="slide-title">Une fonction robuste</h2>
+            </div>
+            <div class="code-block">
+<span class="code-keyword">function</span> exportToExcel(data, filename) {
+  <span class="code-keyword">const</span> headers = Object.keys(data[0]);
+  <span class="code-keyword">let</span> csvContent = headers.join(<span class="code-keyword">";"</span>) + <span class="code-keyword">"\r\n"</span>;
+  <span class="code-comment">// ... boucle sur les données ...</span>
+  <span class="code-keyword">const</span> blob = <span class="code-keyword">new</span> Blob([<span class="code-keyword">"\ufeff"</span> + csvContent], ...);
+  <span class="code-comment">// ... déclenchement du téléchargement ...</span>
+}
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="tech-highlight">
+                <h3>Séparateur ";"</h3>
+                <p>Utilisation du point-virgule pour une compatibilité parfaite avec Excel en français.</p>
+            </div>
+            <div class="tech-highlight">
+                <h3>BOM UTF-8</h3>
+                <p>Garantit que les symboles (FCFA, accents) s'affichent correctement dès l'ouverture.</p>
+            </div>
+            <img src="/home/ubuntu/upload/search_images/XdPT1bycpGmt.jpg" class="abstract-img" alt="Code Abstract">
+        </div>
+    </div>
+</body>
+</html>

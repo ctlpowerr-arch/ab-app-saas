@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background-color: #F2F2F2;
+            font-family: 'Montserrat', sans-serif;
+            color: #1A1A1A;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+        .top-section {
+            width: 100%;
+            padding-top: 100px; /* do not change - title spacing must stay */
+            padding-left: 80px;
+            padding-right: 80px;
+            text-align: center;
+        }
+        .accent-dot {
+            width: 60px;
+            height: 12px;
+            background-color: #0057B7;
+            margin: 0 auto 10px auto; /* reduced spacing */
+        }
+        .conclusion-title {
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 10px; /* reduced spacing */
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        .conclusion-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333333;
+            max-width: 900px;
+            margin: 0 auto 10px auto; /* reduced spacing */
+            line-height: 1.4;
+        }
+        .cta-box {
+            display: inline-block;
+            background-color: #1A1A1A;
+            color: #F2F2F2;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px; /* reduced spacing */
+        }
+        .bottom-section {
+            width: 100%;
+            flex-grow: 0; /* prevent stretching and extra height */
+            background-color: #1A1A1A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 0;
+        }
+        .conclusion-image {
+            width: 600px;
+            height: 240px; /* reduced from 350 to 240 */
+            object-fit: contain;
+            border: 15px solid #F2F2F2;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="top-section">
+            <div class="accent-dot"></div>
+            <h2 class="conclusion-title">La donnée au service<br>de votre entreprise</h2>
+            <p class="conclusion-text">La fonction exportToExcel transforme votre application web en un véritable outil d'aide à la décision stratégique.</p>
+            <div class="cta-box">Utilisez l'export dès aujourd'hui !</div>
+        </div>
+        <div class="bottom-section">
+            <img src="/home/ubuntu/upload/search_images/bP3gXajSyyys.jpg" class="conclusion-image" alt="Data Visualization Illustration">
+        </div>
+    </div>
+</body>
+</html>

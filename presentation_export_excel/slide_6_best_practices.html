@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F2F2F2;
+            font-family: 'Montserrat', sans-serif;
+            color: #1A1A1A;
+            display: flex;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 120px;
+            background-color: #0057B7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sidebar-text {
+            transform: rotate(-90deg);
+            color: #F2F2F2;
+            font-size: 24px;
+            font-weight: 900;
+            white-space: nowrap;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        .main-content {
+            flex: 1;
+            padding-top: 80px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .header {
+            margin-bottom: 60px;
+        }
+        .slide-title {
+            font-size: 52px;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1;
+            border-left: 12px solid #1A1A1A;
+            padding-left: 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .practice-item {
+            border-top: 2px solid #1A1A1A;
+            padding-top: 20px;
+        }
+        .practice-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: #0057B7;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .practice-desc {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333333;
+        }
+        .image-container {
+            position: absolute;
+            bottom: 60px;
+            right: 60px;
+            background-color: #1A1A1A;
+            padding: 20px;
+            box-shadow: 15px 15px 0px #0057B7;
+        }
+        .practice-img {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="sidebar">
+            <div class="sidebar-text">AB-APP V4.1 DATA GUIDE</div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h2 class="slide-title">Bonnes Pratiques<br>pour un export parfait</h2>
+            </div>
+            <div class="grid-container">
+                <div class="practice-item">
+                    <h3 class="practice-title">Nettoyage</h3>
+                    <p class="practice-desc">Assurez-vous que vos données ne contiennent pas de valeurs nulles ou indéfinies avant l'exportation.</p>
+                </div>
+                <div class="practice-item">
+                    <h3 class="practice-title">Nommage</h3>
+                    <p class="practice-desc">Utilisez des noms de fichiers explicites incluant la date et le type de rapport (ex: Ventes_Dec_2025).</p>
+                </div>
+                <div class="practice-item">
+                    <h3 class="practice-title">Filtrage</h3>
+                    <p class="practice-desc">Exportez uniquement les données pertinentes pour votre analyse afin de garder des fichiers légers.</p>
+                </div>
+                <div class="practice-item">
+                    <h3 class="practice-title">Vérification</h3>
+                    <p class="practice-desc">Ouvrez systématiquement le fichier généré pour valider la structure des colonnes et l'encodage.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="/home/ubuntu/upload/search_images/t6mV23lL1nPr.jpg" class="practice-img" alt="Best Practices Illustration">
+        </div>
+    </div>
+</body>
+</html>

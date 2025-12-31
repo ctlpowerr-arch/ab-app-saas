@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F2F2F2;
+            font-family: 'Montserrat', sans-serif;
+            color: #1A1A1A;
+            display: grid;
+            grid-template-columns: 350px 1fr 450px;
+            gap: 40px;
+            overflow: hidden;
+        }
+        .title-col {
+            padding-top: 80px;
+            padding-left: 80px;
+            border-right: 2px solid #1A1A1A;
+        }
+        .accent-square {
+            width: 40px;
+            height: 40px;
+            background-color: #0057B7;
+            margin-bottom: 30px;
+        }
+        .slide-title {
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+        .content-col {
+            padding-top: 120px;
+        }
+        .point-item {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .point-icon {
+            font-size: 24px;
+            color: #0057B7;
+            margin-right: 20px;
+            padding-top: 5px;
+        }
+        .point-text h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .point-text p {
+            font-size: 18px;
+            color: #333333;
+            line-height: 1.4;
+        }
+        .image-col {
+            background-color: #1A1A1A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dashboard-img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border: 10px solid #F2F2F2;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="title-col">
+            <div class="accent-square"></div>
+            <h2 class="slide-title">Pourquoi<br>exporter<br>vos<br>données ?</h2>
+        </div>
+        <div class="content-col">
+            <div class="point-item">
+                <i class="fas fa-chart-line point-icon"></i>
+                <div class="point-text">
+                    <h3>Analyse approfondie</h3>
+                    <p>Utilisez la puissance d'Excel pour vos calculs comptables complexes.</p>
+                </div>
+            </div>
+            <div class="point-item">
+                <i class="fas fa-shield-alt point-icon"></i>
+                <div class="point-text">
+                    <h3>Archivage sécurisé</h3>
+                    <p>Gardez une copie locale de vos ventes et stocks en toute sécurité.</p>
+                </div>
+            </div>
+            <div class="point-item">
+                <i class="fas fa-share-alt point-icon"></i>
+                <div class="point-text">
+                    <h3>Partage facilité</h3>
+                    <p>Envoyez vos rapports à vos partenaires en un clic au format standard.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-col">
+            <img src="/home/ubuntu/upload/search_images/xm9aXfkHAYWt.jpg" class="dashboard-img" alt="Analytics Dashboard">
+        </div>
+    </div>
+</body>
+</html>

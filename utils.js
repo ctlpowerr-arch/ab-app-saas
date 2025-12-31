@@ -1,4 +1,4 @@
-// UTILS POUR AB-APP V4.1
+// CONVERSION NOMBRE EN LETTRES
 function numberToLetters(num) {
     const units = ['', 'un', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf'];
     const teens = ['dix', 'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf'];
@@ -23,33 +23,33 @@ function numberToLetters(num) {
             const rest = n % 1000;
             return (thousand === 1 ? '' : convert(thousand) + ' ') + 'mille' + (rest !== 0 ? ' ' + convert(rest) : '');
         }
-        return n.toString(); // Pour les très grands nombres
+        return n.toString();
     }
 
-    return convert(num).toUpperCase();
+    return convert(Math.floor(num)).toUpperCase();
 }
 
-// Export Excel structuré
+// EXPORT EXCEL STRUCTURÉ
 function exportToExcel(data, filename) {
-    let csvContent = "data:text/csv;charset=utf-8,";
-    
-    // En-têtes
+    if (!data || !data.length) return;
+
     const headers = Object.keys(data[0]);
-    csvContent += headers.join(",") + "\r\n";
-    
-    // Données
+    let csvContent = "\ufeff" + headers.join(";") + "\r\n";
+
     data.forEach(row => {
         const values = headers.map(header => {
-            const val = row[header];
-            return typeof val === 'string' ? `"${val.replace(/"/g, '""')}"` : val;
+            let val = row[header] === null ? "" : row[header];
+            if (typeof val === 'string') val = `"${val.replace(/"/g, '""')}"`;
+            return val;
         });
-        csvContent += values.join(",") + "\r\n";
+        csvContent += values.join(";") + "\r\n";
     });
-    
-    const encodedUri = encodeURI(csvContent);
+
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement("a");
-    link.setAttribute("href", encodedUri);
-    link.setAttribute("download", filename + ".csv");
+    link.href = URL.createObjectURL(blob);
+    link.download = filename + ".csv";
     document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
 }

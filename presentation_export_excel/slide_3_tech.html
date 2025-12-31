@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F2F2F2;
+            font-family: 'Montserrat', sans-serif;
+            color: #1A1A1A;
+            padding-top: 60px;
+            overflow: hidden;
+        }
+        .header {
+            padding-left: 80px;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+        }
+        .accent-line {
+            width: 100px;
+            height: 12px;
+            background-color: #0057B7;
+            margin-right: 30px;
+        }
+        .slide-title {
+            font-size: 56px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 80px;
+            margin-bottom: 60px;
+        }
+        .step-card {
+            width: 260px;
+            border-top: 4px solid #1A1A1A;
+            padding-top: 20px;
+        }
+        .step-num {
+            font-size: 48px;
+            font-weight: 900;
+            color: #0057B7;
+            margin-bottom: 10px;
+        }
+        .step-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .step-desc {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.4;
+        }
+        .footer-image {
+            width: 1280px;
+            height: 250px;
+            background-color: #1A1A1A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tech-img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            filter: grayscale(1) invert(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <div class="accent-line"></div>
+            <h2 class="slide-title">Comment ça marche ?</h2>
+        </div>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-num">01</div>
+                <h3 class="step-title">Extraction</h3>
+                <p class="step-desc">La fonction récupère les données JSON brutes de votre application.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">02</div>
+                <h3 class="step-title">Formatage</h3>
+                <p class="step-desc">Elle transforme les objets complexes en lignes et colonnes CSV.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">03</div>
+                <h3 class="step-title">Sécurisation</h3>
+                <p class="step-desc">Elle protège les caractères spéciaux pour éviter les erreurs de lecture.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">04</div>
+                <h3 class="step-title">Téléchargement</h3>
+                <p class="step-desc">Elle génère un fichier .csv encodé en UTF-8 avec BOM.</p>
+            </div>
+        </div>
+        <div class="footer-image">
+            <img src="/home/ubuntu/upload/search_images/BA3Bqbv4gT8b.jpg" class="tech-img" alt="Technical Illustration">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Fira+Code&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F2F2F2;
+            font-family: 'Montserrat', sans-serif;
+            color: #1A1A1A;
+            display: grid;
+            grid-template-columns: 450px 1fr;
+            gap: 60px;
+            overflow: hidden;
+        }
+        .left-col {
+            padding-top: 80px;
+            padding-left: 80px;
+            background-color: #1A1A1A;
+            color: #F2F2F2;
+        }
+        .accent-dot {
+            width: 24px;
+            height: 24px;
+            background-color: #0057B7;
+            margin-bottom: 40px;
+        }
+        .slide-title {
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1.1;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .instruction-list {
+            list-style: none;
+        }
+        .instruction-item {
+            font-size: 20px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+        }
+        .instruction-item::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color: #0057B7;
+            margin-right: 16px;
+        }
+        .right-col {
+            padding-top: 100px;
+            padding-right: 80px;
+        }
+        .code-block {
+            background-color: #333333;
+            color: #F2F2F2;
+            padding: 40px;
+            font-family: 'Fira Code', monospace;
+            font-size: 22px;
+            line-height: 1.5;
+            border-left: 10px solid #0057B7;
+        }
+        .code-comment { color: #888888; }
+        .code-keyword { color: #0057B7; }
+        .code-string { color: #68d391; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-col">
+            <div class="accent-dot"></div>
+            <h2 class="slide-title">Comment<br>l'appeler<br>dans votre<br>code ?</h2>
+            <ul class="instruction-list">
+                <li class="instruction-item">Préparez vos données JSON</li>
+                <li class="instruction-item">Définissez le nom du fichier</li>
+                <li class="instruction-item">Appelez la fonction</li>
+            </ul>
+        </div>
+        <div class="right-col">
+            <div class="code-block">
+                <span class="code-comment">// 1. Préparation des données</span><br>
+                <span class="code-keyword">const</span> mesVentes = [<br>
+                &nbsp;&nbsp;{ Date: <span class="code-string">"2025-12-30"</span>, Client: <span class="code-string">"Jean"</span>, Total: 5000 },<br>
+                &nbsp;&nbsp;{ Date: <span class="code-string">"2025-12-30"</span>, Client: <span class="code-string">"Marie"</span>, Total: 12000 }<br>
+                ];<br><br>
+                <span class="code-comment">// 2. Appel de la fonction</span><br>
+                exportToExcel(mesVentes, <span class="code-string">"Rapport_Ventes"</span>);
+            </div>
+        </div>
+    </div>
+</body>
+</html>

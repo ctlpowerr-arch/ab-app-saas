@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "title": "Guide d'Utilisation : Fonction exportToExcel",
+    "created": 1767114680.4059372,
+    "last_updated": 1767114767.1975694,
+    "total_slides": 7
+  },
+  "slides": {
+    "slide_1_title": "edited",
+    "slide_2_intro": "edited",
+    "slide_3_tech": "edited",
+    "slide_4_code": "edited",
+    "slide_5_guide": "edited",
+    "slide_6_best_practices": "edited",
+    "slide_7_conclusion": "edited"
+  },
+  "outline": [
+    {
+      "id": "slide_1_title",
+      "title": "Guide d'Utilisation : Fonction exportToExcel",
+      "summary": "Titre de la présentation avec sous-titre sur l'optimisation de la gestion des données.",
+      "image_plan": "/home/ubuntu/upload/search_images/lLdGKL6y0Mkx.jpg - Title slide focusing on the 'exportToExcel' function. Image 1 is a clear icon representing an Excel file with a download arrow, perfectly matching the function's purpose.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_2_intro",
+      "title": "Pourquoi exporter vos données ?",
+      "summary": "Introduction aux avantages de l'exportation : analyse, archivage, partage et compatibilité.",
+      "image_plan": "/home/ubuntu/upload/search_images/xm9aXfkHAYWt.jpg - The slide discusses using Excel for 'Analyse approfondie' (deep analysis) and reporting. Image 4 shows a detailed analytics dashboard, which is the result of effective data export and analysis.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_3_tech",
+      "title": "Comment ça marche ?",
+      "summary": "Explication technique du processus : extraction, formatage, sécurisation et téléchargement.",
+      "image_plan": "/home/ubuntu/upload/search_images/BA3Bqbv4gT8b.jpg - This slide explains the technical process of data extraction, formatting, and conversion, which involves code and data transformation (JSON to CSV). Image 7 shows binary code and a monitor with code symbols, representing the technical backend process.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_4_code",
+      "title": "Une fonction robuste et propre",
+      "summary": "Présentation de la structure du code JavaScript avec focus sur le séparateur et l'encodage.",
+      "image_plan": "/home/ubuntu/upload/search_images/XdPT1bycpGmt.jpg - This slide shows the actual JavaScript code snippet. Image 8 is a good abstract representation of code structure and file handling (HTML, code snippet, document).",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_5_guide",
+      "title": "Comment l'appeler dans votre code ?",
+      "summary": "Guide pratique d'intégration avec un exemple concret d'appel de fonction.",
+      "image_plan": "",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_6_best_practices",
+      "title": "Bonnes Pratiques pour un export parfait",
+      "summary": "Conseils pour garantir la qualité des données exportées : nettoyage, nommage, filtrage et vérification.",
+      "image_plan": "/home/ubuntu/upload/search_images/t6mV23lL1nPr.jpg - This slide is about 'Bonnes Pratiques' (Best Practices) for a perfect export, which relates to data quality, organization, and time management. Image 6 shows a laptop with charts, gears, and a clock, symbolizing organized data analysis and efficiency.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_7_conclusion",
+      "title": "La donnée au service de votre entreprise",
+      "summary": "Conclusion sur l'importance de l'export pour l'aide à la décision et invitation à l'action.",
+      "image_plan": "/home/ubuntu/upload/search_images/bP3gXajSyyys.jpg - The conclusion emphasizes using data for decision-making and performance analysis. Image 5 is a clean, modern illustration of data visualization and reporting, suitable for a concluding thought on performance.",
+      "slide_template_key": ""
+    }
+  ]
+}
